@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../rulers/contact.service';
+import { GovernerService } from './governer.service';
 
 @Component({
   //selector: 'app-governer',
@@ -12,8 +13,8 @@ export class GovernerComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  constructor(private userService: ContactService) {
-    this.contacts = this.userService.getContacts();
+  constructor(private govService: GovernerService ) {
+    this.contacts = this.govService.getContacts();
   }
 
 }

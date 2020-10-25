@@ -12,8 +12,8 @@ export class UserComponent {
   text = 'user page';
   contacts: {}[];
 
-  constructor(private userService: ContactService) {
-    this.contacts = this.userService.getContacts();
+  constructor(private contService: ContactService) {
+    this.contacts = this.contService.getContacts();
   }
 
 }

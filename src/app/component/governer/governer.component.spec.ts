@@ -29,12 +29,12 @@ describe('GovernerComponent', () => {
   });
 
   it(`GOVERNOR2-should have one user`, waitForAsync(() => {
-    expect(component.contacts.length).toEqual(6);
+    expect(component.contacts.length).toEqual(2);
 }));
 
 it(`GOVERNOR3-html should render one user`, waitForAsync(() => {
     fixture.detectChanges();
     const el = fixture.nativeElement.querySelector('p');
-    expect(el.innerText).toContain('four');
+    expect(el.innerText).toContain('20/12/1943');
 }));
 });
