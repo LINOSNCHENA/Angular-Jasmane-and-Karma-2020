@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from './user.service';
+import { ContactService } from './contact.service';
 
 
 @Component({
@@ -12,7 +12,7 @@ export class UserComponent {
   text = 'user page';
   contacts: {}[];
 
-  constructor(private userService: UserService) {
+  constructor(private userService: ContactService) {
     this.contacts = this.userService.getContacts();
   }
 
