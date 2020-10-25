@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   }
 
   text = 'home page ZAMBIA';
-  quoteText = 'this text is meant to be quoted';
-  ContactsText = 'this text is meant to be quoted, The list of Contacts of 2020';
+  zed1 = 'this SECOND zed Text';
+  zed2 = 'this THIRD zed Text';
 
 }

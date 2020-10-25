@@ -7,19 +7,13 @@ import { UserService } from './user.service';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnInit {
-  // contacts: {}[];
-  // users: {}[];
+export class UserComponent {
 
-  // constructor() { }
-
-  ngOnInit(): void {
-  }
   text = 'user page';
-  users;
+  contacts: {}[];
 
   constructor(private userService: UserService) {
-    this.users = this.userService.getUsers();
+    this.contacts = this.userService.getContacts();
   }
 
 }

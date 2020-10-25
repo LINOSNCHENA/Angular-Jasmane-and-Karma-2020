@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { SummaryComponent } from './summary.component';
 
-import { QuoteTextComponent } from './quote-text.component';
-
-describe('QuoteTextComponent', () => {
-  let component: QuoteTextComponent;
-  let fixture: ComponentFixture<QuoteTextComponent>;
+describe('SummaryComponent', () => {
+  let component: SummaryComponent;
+  let fixture: ComponentFixture<SummaryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QuoteTextComponent ]
+      declarations: [ SummaryComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuoteTextComponent);
+    fixture = TestBed.createComponent(SummaryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -24,7 +23,7 @@ describe('QuoteTextComponent', () => {
   });
 
   it(`should render @input`, () => {
-    const fixture = TestBed.createComponent(QuoteTextComponent);
+    const fixture = TestBed.createComponent(SummaryComponent);
     const app = fixture.debugElement.componentInstance;
     app.text = 'test quote';
     fixture.detectChanges();

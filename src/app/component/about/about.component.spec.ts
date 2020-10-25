@@ -8,9 +8,9 @@ describe('AboutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AboutComponent ]
+      declarations: [AboutComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -19,12 +19,11 @@ describe('AboutComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('ABOUT #1 - should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`ABOUT 2- should have as text 'about page'`, () => {
-    //  it(`ABOUT 2- should have as text 'about page'`, async(() => {
+  it(`ABOUT #2 - should have as text 'about page'`, () => {
     const fixture = TestBed.createComponent(AboutComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.text).toEqual('about page');

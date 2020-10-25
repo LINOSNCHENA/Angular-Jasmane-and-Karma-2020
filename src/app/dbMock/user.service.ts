@@ -8,7 +8,7 @@ export class UserServicex {
 
   constructor() { }
 
-  getUsers(): Array<{}> {
+  getContacts(): Array<{}> {
     return [
         {
             name: 'NORIA',

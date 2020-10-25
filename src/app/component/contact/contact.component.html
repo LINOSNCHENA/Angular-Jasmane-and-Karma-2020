@@ -1,38 +1,24 @@
 <div>
-    {{ text }}
+  {{ text }}
 </div>
 
 <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
-  <div class="form-group">
-    <label class="center-block">Name:
-      <input class="form-control" formControlName="name">
-    </label>
-    <label class="center-block">Email:
-      <input class="form-control" formControlName="email">
-    </label>
-    <label class="center-block">Text:
-      <input class="form-control" formControlName="text">
-    </label>
-  </div>
-    <button type="submit"
-            [disabled]="!contactForm.valid" class="btn btn-success">Save</button>
-</form>
-
-<div>
-  <br> <br> <br>
-  {{ text2 }}
-</div>
-
-<form id="contact-form2" [formGroup]="contactForm2" (ngSubmit)="onSubmit()" novalidate>
 <div class="form-group">
   <label class="center-block">Name:
-    <input class="form-control" formControlName="NAME">
+    <input class="form-control" formControlName="name">
   </label>
-  <label class="center-block">Dept:
-    <input class="form-control" formControlName="DEPT">
+  <label class="center-block">Mobile:
+    <input class="form-control" formControlName="mobile">
   </label>
-  <label class="center-block">Salary:
-    <input class="form-control" formControlName="SALARY">
+  <label class="center-block">Office:
+    <input class="form-control" formControlName="office">
+  </label>
+  <br>
+  <label class="center-block">Email:
+    <input class="form-control" formControlName="email">
+  </label>
+  <label class="center-block">Stars:
+    <input class="form-control" formControlName="stars">
   </label>
 </div>
   <button type="submit"
